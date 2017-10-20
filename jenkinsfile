@@ -2,10 +2,10 @@ pipeline {
     agent any 
 
     stages {
-            stage('Compile') { 
+            stage('Test') { 
             steps { 
 		withMaven(maven : 'maven.3.0') {
-                sh 'mvn compile' 
+                sh 'mvn test' 
 	            }
        		 }
 	    }
