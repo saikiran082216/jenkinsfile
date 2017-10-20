@@ -4,10 +4,8 @@ pipeline {
     stages {
             stage('Test') { 
             steps { 
-		withMaven(maven : 'maven.3.0') {
-                sh 'mvn test' 
-	            }
-       		 }
+		 sh 'mvn test' 
+	        }
 	    }
 	}
 }
