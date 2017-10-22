@@ -2,13 +2,11 @@ pipeline {
     agent any 
 
     stages {
-            stage('Test') { 
+            stage('Echo Process Name') { 
             
 	    steps { 
-	          withMaven maven ('maven.3.0') {
-		  sh 'mvn test' 
+	           echo ' Testing Jenkins File'
 		  	}
-		  }
 	    }
 	}
 }
